@@ -1,0 +1,303 @@
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    height: 80px;           
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+
+body {
+    margin: 0;
+    padding-top: 100px; 
+    font-family: Arial, sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+/* ====== TITULOS GERAIS ====== */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+/*Introdução*/
+.introducao {
+    padding: 20px;
+    text-align: center;
+}
+
+main p {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/*Sobre mim*/
+.sobre-mim {
+    padding: 20px;
+    text-align: center;
+    background-color: #c6c2c2;
+}
+
+.sobre-mim header {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-mim div {
+    margin: 120px auto 0;
+    max-width: 600px;
+    background-color: #656363;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.sobre-mim img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.sobre-mim p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+/*Portfólio*/
+.portifolio header {
+    background-color: #333;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portifolio h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.portifolio h2 {
+    margin-top: 40px;
+    color: #333;
+}
+
+.portifolio p {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.portifolio table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.portifolio th,
+.portifolio td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.portifolio img {
+    max-width: 100%;  
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Tabelas lado a lado */
+.tabelas-lado-a-lado {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tabelas-lado-a-lado table {
+    flex: 1;
+    min-width: 280px;
+}
+
+/*Formação Educacional*/
+
+
+.formacao_educac header {
+    background-color: #333;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formacao_educac header h1 {
+    color: #ccc;
+    margin: 0;
+}
+
+/*Botão Voltar*/
+.voltar {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    background-color: #656363;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.voltar:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}
+
+/*Responsividade*/
+@media (max-width: 768px) {
+    nav ul {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tabelas-lado-a-lado {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*Formulário de contato */
+.contato-form {
+    max-width: 400px;
+    margin: 60px auto 0 auto;
+    background: #fff;
+    padding: 32px 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+
+.contato-form h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #333;
+}
+
+.contato-form label {
+    display: block;
+    margin-bottom: 6px;
+    color: #222;
+    font-weight: bold;
+}
+.contato-form input,
+.contato-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    box-sizing: border-box;
+    background: #f9f9f9;
+}
+
+.contato-form button {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.contato-form button:hover {
+    background-color: #555;
+}
+/* Formação Educacional */
+.formacao-tabela {
+    max-width: 700px;
+    margin: 40px auto 24px auto;
+    background: #fff;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+
+.formacao-tabela table {
+    width: 100%;
+    border-collapse: collapse;
+    background: transparent;
+}
+
+.formacao-tabela th, .formacao-tabela td {
+    border: 1px solid #ddd;
+    padding: 12px 8px;
+    text-align: left;
+    font-size: 1em;
+}
+
+.formacao-tabela th {
+    background: #333;
+    color: #fff;
+    font-weight: bold;
+}
+
+.idiomas {
+    max-width: 700px;
+    margin: 0 auto 32px auto;
+    background: #fff;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+
+.idiomas h2 {
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.idiomas ul {
+    list-style: disc inside;
+    padding-left: 0;
+    color: #222;
+    font-size: 1em;
+}
